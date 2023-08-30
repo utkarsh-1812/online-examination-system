@@ -1,0 +1,66 @@
+What is the basic building block of all digital circuits?
+a) AND gate
+b) OR gate
+c) XOR gate
+d) NAND gate
+
+Which of the following is not a programming language?
+a) Java
+b) HTML
+c) Python
+d) C++
+
+What is the output of the following code in Python?
+x = 10
+y = 5
+print(x % y)
+a) 2
+b) 3
+c) 5
+d) 10
+
+Which of the following data structures is not linear?
+a) Queue
+b) Stack
+c) Tree
+d) Heap
+
+Which of the following is not a sorting algorithm?
+a) Merge Sort
+b) Quick Sort
+c) Depth-First Search
+d) Bubble Sort
+
+Which of the following is not a database management system?
+a) MySQL
+b) Oracle
+c) Microsoft Excel
+d) MongoDB
+
+Which of the following is not an operating system?
+a) Windows
+b) Linux
+c) Mac OS
+d) Java
+
+What is the purpose of a compiler?
+a) To convert high-level code into machine code
+b) To execute code
+c) To debug code
+d) To optimize code
+
+What is the output of the following code in Java?
+String str = "Hello World!";
+System.out.println(str.substring(0, 5));
+a) Hello
+b) World
+c) Hello W
+d) World!
+
+Which of the following is not a type of programming paradigm?
+a) Object-Oriented Programming
+b) Functional Programming
+c) Procedural Programming
+d) Graphical Programming
+
+Note: The answers to these questions are as follows: 1) d, 2) b, 3) a, 4) d, 5) c, 6) c, 7) d, 8) a, 9) Hello, 10) d.

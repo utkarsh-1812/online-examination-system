@@ -1,0 +1,109 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/index.css' %}">
+    <link rel="stylesheet" href="{% static 'css/login.css' %}">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <title>Admin | Login</title>
+
+</head>
+<body>
+    <header class="" id="header">
+        <a href="./index.html" class="logo" id="#logo">OPEC - Online Examination Centre</a>
+        <i class="bx bx-menu" id="menu-icon"></i>
+        <nav class="navbar">
+          <a href="./about.html">About</a>
+          <a class="btn" id="btn-color" href="#">Contact Us</a>
+        </nav>
+      </header>
+   <div class="box">
+    <div class="container">
+
+        <div class="top">
+            <span>Have an account?</span>
+            <div class="heading">Admin Login</div>
+        </div>
+
+        <div class="input-field">
+            <input type="text" class="input" placeholder="Username" id="">
+            <i class='bx bx-user' ></i>
+        </div>
+
+        <div class="input-field">
+            <input type="Password" class="input" placeholder="Password" id="">
+            <i class='bx bx-lock-alt'></i>
+        </div>
+
+        <div class="input-field">
+            <input type="submit" class="submit" value="Login" id="">
+        </div>
+
+        <div class="two-col">
+            <div class="one">
+               <input type="checkbox" name="" id="check" required>
+               <label for="check"> Remember Me</label>
+            </div>
+            <div class="two">
+                <label><a href="#">Forgot password?</a></label>
+            </div>
+        </div>
+    </div>
+</div>
+<section class="footer">
+  <div class="main">
+    <div class="list list-1">
+      <h2>OPEC</h2>
+      <div class="comp-desc">
+        <p>
+          OPEC is an online platform where examinations are conducted through online medium.
+        </p>
+      </div>
+      <br>
+      <div class="comp-desc">
+        <p style="font-size: 16px">For queries:</p>
+        <p>opec2023@gmail.com</p>
+      </div>
+      <div class="social">
+        <a href="#"><i class='bx bxl-facebook sm-link'></i></a>
+        <a href="#"><i class='bx bxl-instagram-alt sm-link'></i></a>
+        <a href="#"><i class='bx bxl-twitter sm-link'></i></a>
+        <a href="#"><i class='bx bxl-youtube sm-link'></i></a>
+        <a href="#"><i class='bx bxl-linkedin sm-link'></i></a>
+      </div>
+    </div>
+
+
+    <div class="list list-2">
+      <h4>Useful Links</h4>
+      <ul>
+        <li><a href="contact-page.html">Contact US</a></li>
+        <li><a href="community.html">Our Community</a></li>
+      </ul>
+    </div>
+
+    <div class="list list-3">
+      <h4>Designed By</h4>
+      <ul>
+        <li>Md Farhan Sajid - 2060010</li>
+        <li>Anshuman Dhan - 2060007</li>
+        <li>Ankit Kumar - 2060029</li>
+        <li>Moni Kumari - 2060009</li>
+        <li>Utkarsh Didwania - 2060004</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer-end">
+    <div class="end-text">
+      <p>Copyright &#169;2023 All rights reserved</p>
+    </div>
+  </div>
+</section>
+<script src="{% static 'JS/index.js' %}"></script>
+</body>
+</html>

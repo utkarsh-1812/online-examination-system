@@ -1,0 +1,14 @@
+<header class="" id="header">
+  <a href="{% url 'home' %}" class="logo" id="#logo">OPEC - Online Examination Centre</a>
+  <i class="bx bx-menu" id="menu-icon"></i>
+  <nav class="navbar">
+    <a href="{% url 'teacher:interface' %}" class="temp">Personal Information</a>
+    <!--<a href="{% url 'teacher:result' %}" class="temp">Check Results</a>-->
+    <a href="{% url 'teacher:create_question' %}">Set Questions</a>
+    <a href="{% url 'teacher:create_question_paper' %}">Set Question Paper</a>
+    <a href="{% url 'teacher:set_exam' %}">Set Exam</a>
+    <a href="{% url 'about' %}">About</a>
+    <a class="btn" id="btn-color" href="{% url 'contact' %}">Contact Us</a>
+  </nav>
+</header>
+

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{% load static %}
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OPEC - Online Platform for Examination Centre</title>
+  
+  <!-- Boxicon -->
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+  <!-- Custom CSS file -->
+  <link rel="stylesheet" href="{% static 'css/home.css' %}" >
+
+</head>
+<body>
+
+  {%include 'header.html'%}
+  <section class="home">
+    <div class="container">
+      <!--<form method="POST">{% csrf_token %}
+        {{form.as_p}}
+        <p>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </p>
+        </form>-->
+        <h1>{{message}}</h1>
+    </div>
+  </section>
+
+  {%include 'footer.html'%}
+</body>
+</html>

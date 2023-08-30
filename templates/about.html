@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  {% load static %}
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>About Us - OPEC</title>
+
+  <!--Primary meta tags -->
+  <meta name="title" content="OPEC">
+  <meta name="description" content="OPEC stands for online platform for Examination Center. It is a part of online examination system.">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="{% static 'css/index.css' %}">
+  <link rel="stylesheet" href="{% static 'css/about.css' %}">
+
+  <!-- Boxicons -->
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+
+<body>
+  {%include 'header.html'%}
+  <div class="top-div">
+    <h1>About Us</h1>
+  </div>
+  <div class="contents">
+    <p>
+      At our online examination website, we are committed to providing a seamless and convenient platform for individuals and organizations to conduct and take examinations. Our goal is to provide a secure, reliable, and user-friendly platform that can be used by individuals and organizations worldwide. <br> <br>
+      Our team is comprised of experts in the field of online examination, with a passion for providing the best possible experience for our users. We understand the importance of exams and the impact they can have on an individual’s education, career, and personal growth. That is why we are dedicated to providing a platform that is easy to use, yet highly secure and reliable. <br> <br>
+      Our website is designed to cater to the needs of individuals and organizations who need to conduct exams online. We offer a wide range of features and tools that make the process of conducting and taking exams easier and more efficient. From customizable exam templates to advanced reporting features, we have everything you need to ensure a smooth and successful examination process. <br> <br>
+      Another feature that sets us apart is our commitment to providing a user-friendly platform. We understand that not everyone is familiar with online examinations, and that is why we have designed our platform to be easy to use and navigate. From intuitive user interfaces to comprehensive tutorials, we are committed to providing a seamless and hassle-free experience for our users. <br> <br>
+      At our online examination website, we pride ourselves on our ability to customize our services to meet the unique needs of our users. Whether you are an individual looking to take an online exam, or an organization looking to conduct large-scale examinations, we have the tools and expertise to meet your needs. Our team works closely with each of our clients to ensure that their needs are met, and that they are able to achieve their goals through our platform. <br> <br>
+      In addition to our commitment to quality and service, we are also dedicated to innovation. We understand that technology is constantly evolving, and that is why we are always looking for new and innovative ways to improve our platform. Whether it’s through the use of artificial intelligence or other cutting-edge technologies, we are committed to staying at the forefront of online examination technology.
+    </p>
+  </div>
+
+  <script src="{% static 'JS/index.js' %}"></script>
+  {%include 'footer.html'%}
+</body>
+
+</html>

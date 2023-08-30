@@ -1,0 +1,61 @@
+What is the value of x in the equation 2x + 5 = 17?
+a) 6
+b) 7
+c) 8
+d) 9
+
+What is the square root of 64?
+a) 4
+b) 6
+c) 8
+d) 10
+
+What is the slope of a line that passes through the points (2, 3) and (4, 5)?
+a) 1/2
+b) 2/1
+c) 1
+d) 2
+
+What is the value of x in the equation 3(x - 5) = 9?
+a) -4
+b) -2
+c) 2
+d) 4
+
+What is the sum of the interior angles of a triangle?
+a) 90 degrees
+b) 180 degrees
+c) 270 degrees
+d) 360 degrees
+
+What is the value of y in the equation 2x + 3y = 12 if x = 4?
+a) 1
+b) 2
+c) 3
+d) 4
+
+What is the area of a rectangle with length 5 cm and width 7 cm?
+a) 10 cm^2
+b) 15 cm^2
+c) 20 cm^2
+d) 35 cm^2
+
+What is the value of x in the equation 5x - 3 = 22?
+a) 5
+b) 7
+c) 9
+d) 11
+
+What is the product of 6 and 8?
+a) 12
+b) 24
+c) 30
+d) 48
+
+What is the distance between the points (3, 4) and (7, 8)?
+a) 2
+b) 4
+c) 6
+d) 8
+
+Note: The answers to these questions are as follows: 1) b, 2) c, 3) a, 4) c, 5) b, 6) b, 7) d, 8) d, 9) d, 10) b.

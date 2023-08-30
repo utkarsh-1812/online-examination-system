@@ -1,0 +1,61 @@
+What is the SI unit of force?
+a) joule
+b) newton
+c) watt
+d) pascal
+
+What is the SI unit of power?
+a) joule
+b) newton
+c) watt
+d) pascal
+
+What is the SI unit of work?
+a) joule
+b) newton
+c) watt
+d) pascal
+
+What is the SI unit of electric current?
+a) ampere
+b) volt
+c) ohm
+d) watt
+
+What is the SI unit of electric charge?
+a) ampere
+b) volt
+c) ohm
+d) coulomb
+
+Which of the following is not a type of electromagnetic radiation?
+a) visible light
+b) X-rays
+c) sound waves
+d) radio waves
+
+Which law of motion states that for every action, there is an equal and opposite reaction?
+a) Newton's first law
+b) Newton's second law
+c) Newton's third law
+d) None of the above
+
+What is the acceleration due to gravity on Earth?
+a) 9.8 m/s^2
+b) 10 m/s^2
+c) 11 m/s^2
+d) 12 m/s^2
+
+Which of the following is not a type of energy?
+a) kinetic energy
+b) potential energy
+c) electric energy
+d) magnetic energy
+
+What is the speed of light in a vacuum?
+a) 3 x 10^5 m/s
+b) 3 x 10^6 m/s
+c) 3 x 10^7 m/s
+d) 3 x 10^8 m/s
+
+Note: The answers to these questions are as follows: 1) b, 2) c, 3) a, 4) a, 5) d, 6) c, 7) c, 8) a, 9) c, 10) d.

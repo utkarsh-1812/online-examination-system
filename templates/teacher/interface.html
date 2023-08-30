@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OPEC - Online Platform for Examination Centre</title>
+    
+    <!-- Boxicon -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- Custom CSS file -->
+    <link rel="stylesheet" href="{% static 'css/index.css' %}" >
+    <link rel="stylesheet" href="{% static 'css/interface.css' %}" >
+
+  </head>
+  <body>
+  {%include 'teacher/teacherheader.html'%}
+    <section class="interface">
+      {%include 'teacher/teacherNavBar.html'%}
+      <div class="rightdiv">
+        <div class="topdiv">
+          <h1>Teacher Interface</h1>
+          <h3>View Profile</h3>
+        </div>
+        <div class="container">
+          <div class="imgdiv">
+            <img src="{% static 'images/profilePic.jpg' %}" alt="Profile picture">
+            <div class="details">
+              <h1>{{request.user.Name}}</h1>
+              <h5>(Teacher ID:{{request.user.User_ID}})</h5>
+            </div>
+          </div>
+          <div class="info">
+            <div class="set">
+              <p class="heading">Email Address:</p>
+              <p class="value">{{request.user.email}}</p>
+            </div>
+            <div class="set">
+              <p class="heading">Institute Name:</p>
+              <p class="value">{{request.user.Institute_Name}}</p>
+            </div>
+            <div class="set">
+              <p class="heading">Institute ID:</p>
+              <p class="value">{{request.user.Institute_ID}}</p>
+            </div>
+            <div class="set">
+              <p class="heading">Phone Number:</p>
+              <p class="value">{{request.user.phone}}</p>
+            </div>
+            <div class="set">
+              <p class="heading">Date Joined:</p>
+              <p class="value">{{request.user.date_joined}}</p>
+            </div>
+
+            
+            <!--<div class="set">
+              <p class="heading">Father's Name:</p>
+              <p class="value">Imran Ahmed</p>
+            </div>
+            
+            <div class="set">
+              <p class="heading">Blood Group:</p>
+              <p class="value">A+</p>
+            </div>
+            <div class="set">
+              <p class="heading">Address:</p>
+              <p class="value">4, Amrita Shergill Road <br>New Delhi <br>110003 <br>India</p>
+            </div>-->
+          </div>
+          <div class="button">
+            <a href="#" class="btn2">Update Info</a>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+
+    {%include 'footer.html'%}
+
+    <script src="{% static 'JS/index.js' %}"></script>
+  </body>
+</html>

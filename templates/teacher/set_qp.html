@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OPEC - Online Platform for Examination Centre</title>
+    
+    <!-- Boxicon -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- Custom CSS file -->
+    <link rel="stylesheet" href="{% static 'css/index.css' %}" >
+    <link rel="stylesheet" href="{% static 'css/interface.css' %}" >
+    <style>
+      
+      .result {
+        margin-bottom: 20px;
+        padding: 10px;
+        background-color: #f0f0f0;
+        border-radius: 5px;
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+      }
+      .subject {
+        font-weight: bold;
+        margin-bottom: 5px;
+      }
+      .details {
+        font-size: 14px;
+        color: #666;
+        margin-bottom: 10px;
+      }
+      .date {
+        margin-right: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    {%include 'teacher/teacherheader.html'%}
+    <section class="interface">
+      {%include 'teacher/teacherNavBar.html'%}
+      <div class="rightdiv">
+        <div class="topdiv">
+          <h1>Teacher Interface</h1>
+         
+        </div>
+        <div class="container">
+          <form method="POST">{% csrf_token %}
+            {% for j,i in q_list %}
+            <div class="result">
+              <input type="checkbox" id="Q{{j}}" name="Q{{j}}" value="{{i.id}}">
+              <div class="details">
+                <span class="subject">Question:</span> {{i.Question}}
+              </div>
+              <div class="name">Q _ID:    {{i.id}}</div>
+              
+              <div class="details">
+                <span class="name">(a):</span> {{i.Option1}}
+              </div>
+              <div class="details">
+                <span class="name">(b):</span> {{i.Option2}}
+              </div>
+              <div class="details">
+                <span class="name">(c):</span> {{i.Option3}}
+              </div>
+              <div class="details">
+                <span class="name">(d):</span> {{i.Option4}}
+              </div>
+              <div class="details">
+                <span class="score">Marks:</span>{{i.Marks}}
+              </div>
+              <div class="name">Answer:    {{i.Answer}}</div>
+            </div>
+            {% endfor %}
+            <!--{{ form.non_field_errors }}
+            <p>
+            <label for="id_question" class="login-labels">Question*</label> 
+            {{ form.Question.errors }}
+            {{ form.Question}}
+            </p><p>
+            <label for="id_Option1" class="login-labels">Option1*:</label> 
+            {{ form.Option1.errors }}
+            {{ form.Option1}}
+          </p><p>
+            <label for="id_Option2" class="login-labels">Option2*:</label> 
+            {{ form.Option2.errors }}
+            {{ form.Option2}}
+          </p><p>
+            <label for="id_Option3" class="login-labels">Option3*:</label> 
+            {{ form.Option3.errors }}
+            {{ form.Option3}}
+          </p><p>
+            <label for="id_Option4" class="login-labels">Option4*:</label> 
+            {{ form.Option4.errors }}
+            {{ form.Option4}}
+          </p><p>
+
+
+            <label for="id_Answer" class="login-labels">Answer*</label> 
+            {{ form.Answer.errors }}
+            {{ form.Answer}}
+          </p><p>
+            <label for="id_Marks" class="login-labels">Marks</label> 
+            {{ form.Marks.errors }}
+            {{ form.Marks}}
+          </p>-->
+          <p>
+            <button type="submit" class="btn btn-primary">Submit</button>
+            </p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    {%include 'footer.html'%}
+
+    <script src="{% static 'JS/index.js' %}"></script>
+  </body>
+</html>

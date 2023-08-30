@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  {% load static %}
+  <head>
+     <!-- Boxicon -->
+     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+     <!-- Custom CSS file -->
+     <link rel="stylesheet" href="{% static 'css/index.css' %}" >
+     <link rel="stylesheet" href="{% static 'css/interface.css' %}" >
+ 
+    <title> Examination Questions</title>
+    <link rel="stylesheet" href="{% static 'css/questions.css' %}">
+  </head>
+  <body>
+    {%include 'student/studentheader.html'%}
+    <!--{%include 'student/studentNavBar.html'%}-->
+    <section class="top">
+      <h1>Multiple Choice Examination Questions</h1>
+      <hr>
+    </section>
+    
+    <div class="container" style="padding:20px ; max-width: 780px;">
+      <form method="POST">{% csrf_token %}
+        {% for j,i in q_list %}
+      <div class="question">
+        <h2>Question {{j}}:</h2>
+        <p>{{i.Question}}</p>
+        <input type="radio" name="Q{{j}}" value="a" id="Q{{j}}a">
+        <label for="Q{{j}}a">a) {{i.Option1}}</label><br>
+        <input type="radio" name="Q{{j}}" value="b" id="Q{{j}}b">
+        <label for="Q{{j}}b">b) {{i.Option2}}</label><br>
+        <input type="radio" name="Q{{j}}" value="c" id="Q{{j}}c">
+        <label for="Q{{j}}c">c) {{i.Option3}}</label><br>
+        <input type="radio" name="Q{{j}}" value="d" id="Q{{j}}d">
+        <label for="Q{{j}}d">d) {{i.Option4}}</label><br>
+      </div>
+      {% endfor %}
+      <button type="submit">Submit</button>
+    </div>
+    {%include 'footer.html'%}
+  </body>
+</html>

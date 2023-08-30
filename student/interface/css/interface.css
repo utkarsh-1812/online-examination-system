@@ -1,0 +1,171 @@
+
+.temp{
+  display: none;
+}
+
+.interface{
+  display: table;
+  margin-top: 4.7rem;
+  width: 100%;
+}
+
+.leftdiv{
+  background: var(--light-grey);
+  display: table-cell;
+  width: 20%;
+}
+
+.leftdiv ul li a{
+  color: #000000;
+}
+
+.options{
+  padding: 20px 15px;
+  background-color: var(--white-color);
+  justify-content: center;
+  margin: auto;
+}
+
+.options ul li:not(.last){
+  border-bottom: 1px solid var(--light-grey);
+  padding: 15px 30px;
+}
+
+.last{
+  padding:15px 30px;
+  margin-top: 25px;
+}
+
+.btn3{
+  margin-left: 10px;
+  border-radius: 30px;
+  padding: 10px 40px;
+}
+
+.rightdiv{
+  background-color: var(--light-grey-second);
+  display: table-cell;
+}
+
+.container{
+  margin: 15px;
+  padding-bottom: 3rem;
+  border-radius: 30px;
+  background-color: var(--white-color);
+}
+
+.topdiv{
+  background: url('../images/interface.jpg');
+  padding: 30px 20px;
+}
+
+.topdiv h3{
+  position: relative;
+  display: inline-block;
+}
+
+.topdiv h3::after{
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 40px;
+  height: 3px;
+  background-color: black;
+}
+
+.imgdiv{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 1rem 2rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid var(--dark-grey);
+}
+
+.imgdiv img{
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  margin-top: 1rem;
+  border: 1px solid #000000;
+}
+
+.imgdiv .details{
+  display: inline-block;
+  margin: 1rem;
+}
+
+.imgdiv h1{
+  font-size: 2.5rem;
+}
+
+.rightdiv .info{
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px,1fr));
+}
+
+.set{
+  margin-bottom: 1.5rem;
+}
+
+p.heading{
+  font-weight: 700;
+}
+
+.container a{
+  margin-left: 36%;
+  margin-top: 2rem;
+}
+
+@media (max-width: 1040px){
+  .interface{
+    margin-top: 0;
+  }
+  .rightdiv{
+    width: 120vw;
+  }
+  .rightdiv .info{
+  grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+  }
+  
+}
+
+@media (max-width: 860px){
+  .leftdiv{
+    display: none;
+  }
+  .temp{
+    display: block;
+  }
+}
+
+@media (max-width: 800px){
+  .container a{
+    margin-left: 15%;
+  }
+
+  .btn2{
+    padding: 10px 40px;
+  }
+}
+
+@media (max-width: 607px){
+
+  .interface{
+    margin-top: 5.4rem;
+    width: 100vw;
+  }
+
+  .imgdiv h1{
+    font-size: 1.5rem;
+  }
+  
+}
+
+@media (max-width: 430px){
+  .imgdiv{
+    display: flex;
+    flex-direction: column;
+  }
+}

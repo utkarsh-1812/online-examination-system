@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {% load static %}
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="{% static 'css/index.css' %}">
+  <link rel="stylesheet" href="{% static 'css/contact.css' %}">
+
+  <!-- Boxicon -->
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  
+  <title>Contact Us</title>
+</head>
+<body>
+  {%include 'header.html'%}
+  
+  <section class="about-section">
+    <h2>Contact Us</h2>
+  </section>
+  
+  <section class="contact-section">
+    <div class="getin">
+      <h2>Get in touch</h2>
+      <p>Looking for help? Fill the form and do let us know.</p>
+  
+      <div class="getin-details">
+        <h3>Address</h3>
+        <div>
+          <i class="fa-solid fa-location-dot icon"></i>
+          <p>Address</p>
+        </div>
+  
+        <h3>Phone</h3>
+        <div>
+          <i class="fa-solid fa-phone icon"></i>
+          <p>(+91) 1234567890</p>
+        </div>
+  
+        <h3>Support</h3>
+        <div>
+          <i class="fa-solid fa-envelope icon"></i>
+          <p>hr@gmail.com</p>
+        </div>
+      </div>
+    </div>
+  
+    <div class="form">
+      <form action="" autocomplete="off">
+        <h4>Let's Connect</h4>
+        <p>Do you have anything to say. Feel free to do so.</p>
+        <div class="form-row">
+          <input type="text" placeholder="Your Name" class="name input" id="Name" required>
+          <input type="email" name="" id="Email" placeholder="Email address...." class="email input" required>
+        </div>
+        <div class="form-col">
+          <input type="subject" placeholder="Subject" class="subject input">
+        </div>
+        <div class="form-col">
+          <textarea name="" cols="20" rows="5" placeholder="How we can help you?" class="message" id="Message" required></textarea>
+        </div>
+        <div class="form-col">
+          <input type="submit" value="Send message" class="send-btn" onclick="SendMail()" />
+        </div>
+      </form>
+    </div>
+  </section>
+  
+  {%include 'footer.html'%}
+
+  <!-- Email.js -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+  <script type="text/javascript">
+    (function () {
+      emailjs.init("rHjGiC50R4JGT5rtA");
+    })();
+  </script>
+
+  <!-- JavaScript -->
+  <script src="{% static 'JS/index.js' %}"></script>
+
+  <!-- Font Awesome Icon -->
+  <script src="https://kit.fontawesome.com/2c541f9ba2.js" crossorigin="anonymous"></script>
+
+</body>
+</html>
+
